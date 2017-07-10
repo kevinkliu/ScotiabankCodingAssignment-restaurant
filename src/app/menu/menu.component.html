@@ -1,0 +1,27 @@
+<div class="container menu">
+  <h2>Menu</h2>
+  <h4>ANTIPASTI</h4>
+  <div class="row" *ngFor="let item of (appetizers$ | async)">
+    <div class="col-lg-6 menu-name" >
+    {{item.name}}
+    </div>
+    <div class="col-lg-6 menu-price" >
+      ${{item.price | number:'.2-2'}}
+    </div>
+    <div class="col-lg-12 menu-desc">
+      {{item.description}}
+    </div>
+  </div>
+  <h4>MAINS</h4>
+  <div class="row" *ngFor="let item of (mains$ | async)">
+    <div class="col-lg-6 menu-name" >
+      {{item.name}}
+    </div>
+    <div class="col-lg-6 menu-price" >
+      ${{item.price | number:'.2-2'}}
+    </div>
+    <div class="col-lg-12 menu-desc">
+      {{item.description}}
+    </div>
+  </div>
+</div>
