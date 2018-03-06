@@ -1,0 +1,8 @@
+<application>
+  <component name="UISettings">
+    <option name="FONT_FACE" value="Fira Code" />
+    <option name="FONT_SCALE" value="2.0" />
+    <option name="FONT_SIZE" value="28" />
+    <option name="OVERRIDE_NONIDEA_LAF_FONTS" value="true" />
+  </component>
+</application>
